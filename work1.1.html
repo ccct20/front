@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BING</title>
+    <style>
+        a{
+          text-decoration: none;
+        }
+        #container {
+            background-image: url('img/BingWallpaper.jpg');
+            height: 100%;
+            width: 100%;
+            background-size:cover;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+         .top{
+            width: 80%;
+            height: 40px;
+            margin: auto;
+            display: flex;
+        }
+        .log img{
+            width: 125px;
+            height: 30px;
+            padding-top: 10px;
+            background-size:cover;
+        }
+        .nav {
+          float: left;
+          margin-left: 20px;
+        }
+        .nav ul li{
+          float: left;
+          margin: 0 10px;
+          list-style-type: none;
+        }
+        .nav ul li a{
+          color: rgba(255,255,255,.8);
+        }
+        .nav ul li :hover{
+          color: aliceblue;
+        }
+        .user {
+          position: relative;
+          margin-left: 50%;
+        }
+        .user a {
+          color: rgba(255,255,255,.8);
+          text-align:center;
+        }
+        .box {
+          height: 32px;
+          margin-left:30%;
+          margin-top: 10%;
+          margin-bottom: 3px;
+          text-align:center;
+        }
+        .box #box1 {
+          height: 32px;
+          width: 76px;
+          background-color: aliceblue;
+          position: absolute;
+          border-radius: 15px; 
+          margin-left: 20px;
+        }
+        .box #box2 {
+          height: 32px;
+          width: 76px;
+          background-color: aliceblue;
+          border-radius: 15px;
+          margin-left: 100px;
+        }
+        .search {
+            width: 500px;
+            height: 50px;
+            margin-left:30%;
+        }
+        .search input {
+            width: 500px;
+            height: 50px;
+            padding-left: 13px;
+            border: 2px solid white;
+            border-radius: 30px; 
+            float: left;
+        }
+        .search .sign {
+            align-items: center;
+            height: 28px;
+            width: auto;
+            float: right;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 35%;
+        }
+
+        .search .sign img {
+            height: 28px;
+            width: 23px;
+        }
+        .footer {
+          position: absolute;
+          height: 40px;
+          width: 100%;
+          bottom: 0;
+          background-color: #333333;
+        }
+        .footer .items {
+          padding: 0 10%;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .footer .items .item {
+          padding-right: 24px;
+          padding-top: 5px;
+          display: inline-block;
+          font-size: 13px;
+          color: #666666;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+      <div class="top">
+        <div class="log">
+          <img src="img/Bing.png"/>
+        </div>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="#">图片</a>
+            </li>
+            <li>
+              <a href="#">视频</a>
+            </li>
+            <li>
+              <a href="#">地图</a>
+            </li>
+            <li>
+              <a href="#">...</a>
+            </li>
+          </ul>
+        </div>
+        <div class="user">
+          <a href="#">登录</a>
+        </div>
+      </div>
+      
+      <div class="box">
+        <div id="box1">国内版</div>
+        <div id="box2">国际版</div>
+      </div>
+
+      <div class="search">
+        <input  name="keyword" type="text">
+        <div class="sign">
+          <img  src="img/img1.png"/>
+          <img  src="img/img2.png"/>
+        </div>
+      </div>
+
+      <div class="footer">
+        <ul class="items">
+          <li class="item">增值电信业务经营许可证：合字B2-20090007</li>
+          <li class="item">京ICP备10036305号-7</li>
+          <li class="item">京公网安备11010802022657号</li>
+          <li class="item">法律声明</li>
+          <li class="item">广告</li>
+          <li class="item">关于我们的广告</li>
+          <li class="item">帮助</li>
+          <li class="item">反馈</li>
+        </ul>
+      </div>
+    </div>
+
+</body>
+</html>
