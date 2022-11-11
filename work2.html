@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 任务1：创建对象 -->
+  <!-- <script>
+    //字面量创建
+    var obj1 = {
+      name: 'chen',
+      age: 20,
+      sex: '男',
+      sayHi: function() {
+        console.log('hi~');}
+    }
+    //new Object()创建
+    var obj2 = new Object();
+    obj2.name = 'chen';
+    obj2.age = 20;
+    obj2.sex = '男';
+    obj2.sayHi = function() {
+      console.log('hi~');}
+    //构造函数创建
+    function Obj(name,age,sex){
+      this.name = name;
+      this.age = age;
+      this.sex = sex;
+      this.say = function(says){
+        console.log(says);
+      }
+    }
+    var obj3 = new Obj('chen',20,'男');
+    
+    obj3.say('hi');
+    console.log(obj3.name);
+  </script> -->
+  
+  <!-- 任务2：switch函数 -->
+  <!-- <script>
+    function Week(w) {
+      switch(w){
+        case 1:
+          console.log('Monday');
+          break;
+        case 2:
+          console.log('Tuesday');
+          break;
+        case 3:
+          console.log('Wednesday');
+          break;
+        case 4:
+          console.log('Thursday');
+          break;
+        case 5:
+          console.log('Friday');
+          break;
+        case 6:
+          console.log('Saturday');
+          break;
+        case 7:
+          console.log('Sunday');
+          break;
+        default:
+          console.log('ERROR');
+      }
+    }
+    Week(4);
+  </script> -->
+  
+  <!-- 任务3：arr.map() -->
+  <script>
+    Array.prototype.newMap = function(fn) {
+　　　　var newArr = [];
+　　　　for(var i = 0; i<this.length; i++){
+　　　　　　newArr.push(fn(this[i],i,this))
+　　　　}
+　　　　return newArr;
+  　}
+  　var arr = [3, 4, 5];
+  　var newArr = arr.newMap(function(item, index, arr) {
+      console.log(2*item, index, arr);
+      return 2*item;
+  　});
+  　console.log(newArr);
+
+  </script>
+</body>
+</html>
