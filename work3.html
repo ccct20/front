@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // //level0
+    // const person = {
+    //   name: 'bbh',
+    //   age: 30,
+    //   address: {
+    //     city: 'ChongQing',
+    //     area: 'NanShan'
+    //   },
+    //   title: ['student',{year:2022, title:'GoodStudent'}]
+    // }
+    // // 代码
+    // let {name} = person;
+    // let {age: year} = person;
+    // let {address:{city}} = person;
+    // let {address:{area: mountain}} = person;
+    // let {title:[title1]} = person;
+    // let {title:[,{title: title2}]} = person;
+    // let [t1,t2,,t3,...args] = [...title2];
+    // let title3 = t1+t2+t3;
+    // console.log(name); // bbh
+    // console.log(year); // 30
+    // console.log(city); // ChongQing 
+    // console.log(mountain); // NanShan //这里没有写错，就是要输出NanShan，结合课件
+    // console.log(title1); // student
+    // console.log(title2); // GoodStudent
+    // console.log(title3); // God 结合课件
+  
+
+    // //level1
+    // function factorial1(n){//循环
+    //   let result = 1;
+    //   for(let i=1;i<=n;i++){
+    //     result *= i;
+    //   }
+    //   return result;
+    // }
+    // console.log(factorial1(4));
+
+    // function factorial2(n){//递归
+    //   if(n == 1){
+    //     return 1;
+    //   }
+    //   else{
+    //     return (factorial2(n-1)*n);
+    //   }
+    // }
+    // console.log(factorial2(5));
+
+
+    //level2
+    //学到这里对赋值、拷贝的定义有点混淆，这里记录下对赋值、浅拷贝、深拷贝的理解
+    let obj = {
+      name: 'chen',
+      age: 20,
+      score: {
+        Math: 90,
+        Eng: 95,
+        other: [80,85,87]
+      }
+    }
+    //1、赋值
+    // let obj1 = obj;
+    // obj1.age = 25;
+    // console.log(obj.age)//25，这里可以看到obj的age改变了
+    // 赋值是把一个变量的值赋给另一个，这里是将对象的地址赋给obj1
+    // 两个指向的是同一对象，所以一个改变属性，另一个也会改变
+    //2、浅拷贝
+    //浅拷贝是期望将对象的所有属性传给另一对象，两变量所指的地址不同，这样两个对象看起来就是独立的
+    //如果原对象的属性值是基础类型，那么就拷贝基础类型；而如果是引用类型，则拷贝的是指针
+    //但这样，原对象包含的子对象还是会随另一对象而改变
+    // let obj2 = {};
+    // Object.assign(obj2,obj);
+    // obj2.age = 25;
+    // console.log(obj.age);//20,没有改变
+    // obj2.score.Math = 91;
+    // console.log(obj.score.Math);//91,改变了
+    //3、深拷贝
+    //深拷贝完全解决了这个问题，不管对象中嵌套多少层子对象，原对象的属性都不会发生改变
+    function clone(target) {
+      if (typeof target === 'object') {
+          //对象和数组都是object类型，这里使对象：{}，数组：[]
+          let cloneTarget = Array.isArray(target) ? [] : {};
+          for (const key in target) {
+              cloneTarget[key] = clone(target[key]);//递归
+          }
+          return cloneTarget;
+      } else {
+          return target;
+        }
+    };
+    let obj3 = clone(obj);
+    console.log(obj3.score.other);//80
+    obj3.score.other[0] = 90;
+    console.log(obj3.score.other);//90
+    console.log(obj.score.other);//80,原对象未变
+    
+  </script>
+</body>
+</html>
