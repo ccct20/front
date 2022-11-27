@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算器</title>
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-image: url('../img/bg4.3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .container {
+				position: absolute;
+				top: 80px;
+				left: 100px;
+				right: 100px;
+				bottom: 80px;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+    #computer{
+        margin-top:80px;
+        background:rgb(117 129 132);
+    }
+    .ipt{
+        width: 170px;
+        margin: 10px auto;
+    }
+
+    #board{
+      margin-top: 20px;
+      background: rgb(206 212 214);
+    }
+
+    #button{
+        width: 130px;
+        margin: 10px auto;
+    }
+    #button button{
+      width: 40px;
+      height: 30px;
+    }
+
+    /*数字按钮样式*/
+    .btn_num{
+        margin: 1px 1px;
+        width: 60px;
+        height: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div id="computer">
+          <div class="ipt">
+            <input type="text" id="txt_code" placeholder="公式计算"disabled/>
+            <br/>
+            <input type="text" id="txt_result" placeholder="结果"disabled/>
+            <br/>
+          </div>
+          <div id="board">
+              <button type="button" class="btn btn-default btn_num" onclick="fun_7()">7</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_8()">8</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_9()">9</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_div()">÷</button>
+              <br/>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_4()">4</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_5()">5</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_6()">6</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_mul()">x</button>
+              <br/>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_1()">1</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_2()">2</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_3()">3</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_sub()">-</button>
+              <br/>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_0()">0</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_00()">00</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_dot()">.</button>
+              <button type="button" class="btn btn-default btn_num" onclick="fun_add()">+</button>
+          </div>
+          <div id='button'>
+              <br/>
+              <button type="button" class="btn btn-danger btn-lg"
+              id="lgbut_eli" onclick="fun_eli()">消除
+              </button>
+              <button type="button" class="btn btn-success btn-lg"
+              id="lgbut_clear" onclick="fun_clear()">清空
+              </button>
+              <button type="button" class="btn btn-primary btn-lg"
+              id="lgbut_compute" onclick="ShowResult()">计算
+              </button>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      var x=document.getElementById("txt_code");
+      var y=document.getElementById("txt_result");
+
+      function fun_7(){
+          x.value+='7';
+      }
+      function fun_8(){
+          x.value+='8';
+      }
+      function fun_9(){
+          x.value+='9';
+      }
+      function fun_div(){
+          x.value+='/';
+      }
+      function fun_4(){
+          x.value+='4';
+      }
+      function fun_5(){
+          x.value+='5';
+      }
+      function fun_6(){
+          x.value+='6';
+      }
+      function fun_mul(){
+          x.value+='*';
+      }
+      function fun_1(){
+          x.value+='1';
+      }
+      function fun_2(){
+          x.value+='2';
+      }
+      function fun_3(){
+          x.value+='3';
+      }
+      function fun_sub(){
+          x.value+='-';
+      }
+      function fun_0(){
+          x.value+='0';
+      }
+      function fun_00(){
+          x.value+='00';
+      }
+      function fun_dot(){
+          x.value+='.';
+      }
+      function fun_add(){
+          x.value+='+';
+      }
+      function fun_clear(){
+          x.value='';
+          y.value='';
+      }
+      function fun_eli(){
+          x.value=x.value.substring(0,x.value.length-1);
+      }
+  </script>
+  <script>
+      function ShowResult(){
+        var x=document.getElementById("txt_code").value;
+        var y=document.getElementById('txt_result');
+        y.value=eval(x);
+      }
+  </script>
+</body>
+</html>
