@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>work5.1</title>
+ 
+ <style>
+ div{
+ width: 100px;
+ height: 100px;
+ margin-bottom: 20px;
+ border-radius: 50%;
+ }
+ @keyframes move {
+ 0% {
+ transform: translateX(0);
+ }
+ 100% {
+ transform: translateX(200px);
+ }
+ }
+ </style>
+ 
+</head>
+ <body>
+ <div class="c1" style="background-color: red;"></div>
+ <div class="c2" style="background-color: green;"></div>
+ <div class="c3" style="background-color: blue;"></div>
+ </body>
+
+<script>
+   var styleNode = document.querySelector("style");
+   //setTimeout定时器嵌套
+  //  setTimeout(()=>{
+  //     styleNode.innerHTML += ".c1{animation: move 1s linear forwards;}";
+  //     setTimeout(()=>{
+  //       styleNode.innerHTML += ".c2{animation: move 1s linear forwards;}";
+  //       setTimeout(()=>{
+  //           styleNode.innerHTML += ".c3{animation: move 1s linear forwards;}";
+  //         },1000);
+  //     },1000);
+  //  },0);
+
+   //Promise链式回调
+   new Promise((resolve,reject) => {
+        setInterval(()=>{
+          styleNode.innerHTML += ".c1{animation: move 1s linear forwards;}";
+          resolve();
+        },0);
+    })
+   .then(()=>{
+      return new Promise((resolve,reject) => {
+          setInterval(()=>{
+            styleNode.innerHTML += ".c2{animation: move 1s linear forwards;}";
+            resolve();
+          },1000)
+        })
+    })
+    .then(()=>{
+      return new Promise((resolve,reject) => {
+          setInterval(()=>{
+            styleNode.innerHTML += ".c3{animation: move 1s linear forwards;}";
+            resolve();
+          },1000)
+        })
+    });
+
+  //aysnc await异步队列
+  // let promise = (time,c) => {
+  // return new Promise((resolve,reject) => {
+  //   setTimeout(()=>{
+  //     resolve("."+c+"{animation: move 1s linear forwards;}");
+  //   },time);
+  //  })
+  // };
+  // async function main(){
+  //   let p1 = await promise(0,"c1");
+  //   styleNode.innerHTML += p1;
+  //   let p2 = await promise(1000,"c2");
+  //   styleNode.innerHTML += p2;
+  //   let p3 = await promise(1000,"c3");
+  //   styleNode.innerHTML += p3;
+  // }
+  // main();
+ </script>
+
+</html>
