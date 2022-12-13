@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .nav {
+      width: 100%;
+      height: 84px;
+      background-color: #d43c33;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+    .nav button{
+      color: #d43c33;
+      width:100px;
+      height:36px;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      font-size: 16px;
+      border: none;
+    }
+    #box {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+    }
+    #box div{
+      text-align: center;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 40px;
+    }
+    #box>div:hover {
+      color: rgb(211, 60, 51);
+      border-bottom: 2px solid red;
+    }
+    #b1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    #b1>span {
+        width: 33%;
+        height: auto;
+        margin: 2px;
+    }
+    #c1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+    #c1>span {
+        width: 33%;
+        height: auto;
+        margin: 2px;
+    }
+    #a1 {
+        height: 20px;
+    }
+
+    </style>
+  </style>
+
+</head>
+<body>
+  <div class="nav">
+    <div style="width: 150px;height:30px;"><img src="../img/wyy.png"></div>
+    <div style="width:100px;height:36px;text-align:center;">
+      <button>
+        下载APP
+      </button>
+    </div>
+  </div>
+  <div id="box">
+    <div>推荐音乐</div>
+    <div>热歌榜</div>
+    <div>搜索</div>
+  </div>
+  <div>
+    <div id="a1" style="text-align:left;">编辑推荐</div>
+
+    <div id="b1">
+        <span><img src="../img/6.1.jpg">电音王国</span>
+        <span><img src="../img/6.2.jpg">电音王国</span>
+        <span><img src="../img/6.3.jpg">电音王国</span>
+    </div>
+    <div id="c1">
+        <span><img src="../img/6.4.jpg">电音王国</span>
+        <span><img src="../img/6.5.jpg">电音王国</span>
+        <span><img src="../img/6.6.jpg">电音王国</span>
+
+    </div>
+  </div>
+</body>
+</html>
