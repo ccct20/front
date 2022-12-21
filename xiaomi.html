@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="xiaomi.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery.1.11.1.min.js"></script>
+  <title>Document</title>
+
+</head>
+<body>
+  <div class="header">
+    <div class="inner">
+      <div class="list1 fl">
+        <ul style="padding: 15px 15px">
+          <li><a href="">小米官网</a> </li>
+          <li><a href="">小米商城</a> </li>
+          <li><a href="">MIUI</a> </li>
+          <li><a href="">云服务</a> </li>
+          <li><a href="">天星数科</a> </li>
+          <li><a href="">协议规则</a> </li>
+          <li><a href="">下载app</a> </li>
+        </ul>
+      </div>
+      <div class="list2 fr">
+        <ul style="padding: 15px 15px">
+          <li><a href="">登录</a> </li>
+          <li><a href="">注册</a> </li>
+          <li><a href="">消息通知</a> </li>
+          <li><a href="">购物车</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 顶部导航栏 -->
+  <div class="main">
+    <div class="nav_top">
+      <div class="logo fl"><img src="img_xiaomi/logo.png" style="height: 100%;"/></div>
+      <div class="menu fl">
+        <div class="fl"><a href="">小米手机</a></div>
+        <div class="fl"><a href="">红米手机</a></div>
+        <div class="fl"><a href="">电视</a></div>
+        <div class="fl"><a href="">笔记本</a></div>
+        <div class="fl"><a href="">平板</a></div>
+        <div class="fl"><a href="">家电</a></div>
+        <div class="fl"><a href="">路由器</a></div>
+        <div class="fl"><a href="">服务中心</a></div>
+        <div class="fl"><a href="">社区</a></div>
+      </div>
+      <div class="search fr"><input></input><button>搜索</button></div>
+    </div>
+    <div id="max">
+      <!-- 左侧导航栏 -->
+      <div class="left-nav">
+        <ul>
+            <li><a href="">手机</a></li>
+            <li><a href="">电视</a></li>
+            <li><a href="">家电</a></li>
+            <li><a href="">笔记本 平板</a></li>
+            <li><a href="">出行 穿戴</a></li>
+            <li><a href="">耳机 音箱</a></li>
+            <li><a href="">健康 儿童</a></li>
+            <li><a href="">生活 箱包</a></li>
+            <li><a href="">智能 路由器</a></li>
+            <li><a href="">电源 配件</a></li>
+        </ul>
+      </div>
+      <!-- 轮播图 -->
+      <div class="banner">
+        <ul class="list">
+            <li class="item active"><img src="./img_xiaomi/swip1.png" alt=""></li>
+            <li class="item"><img src="./img_xiaomi/swip2.png" alt=""></li>
+            <li class="item"><img src="./img_xiaomi/swip3.png" alt=""></li>
+            <li class="item"><img src="./img_xiaomi/swip4.png" alt=""></li>
+            <li class="item"><img src="./img_xiaomi/swip5.png" alt=""></li>
+        </ul>
+        <ul class="pointList">
+            <li class="point active" data-index = 0></li>
+            <li class="point" data-index = 1></li>
+            <li class="point" data-index = 2></li>
+            <li class="point" data-index = 3></li>
+            <li class="point" data-index = 4></li>
+        </ul>
+        <button class="btn" id="leftBtn">〈</button> 
+        <button class="btn" id="rightBtn"> 〉</button>
+      </div>
+    </div>
+    <!-- 广告 -->
+    <div class="ad">
+      <div class="wrap">
+          <div class="ad-aside">
+              <ul>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>保障服务</p></a></li>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>企业团购</p></a></li>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>F码通道</p></a></li>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>米粉卡</p></a></li>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>米粉卡</p></a></li>
+                  <li class="row col"><a href="#"><i class="iconfont">&#xe733;</i>
+                    <p>米粉卡</p></a></li>
+              </ul>
+          </div>
+          <div class="ad-box"><a href="#"><img src="./img_xiaomi/ad.jpg" alt=""></a></div> 
+          <div class="ad-box"><a href="#"><img src="./img_xiaomi/ad.jpg" alt=""></a></div> 
+          <div class="ad-box"><a href="#"><img src="./img_xiaomi/ad.jpg" alt=""></a></div> 
+      </div>
+    </div>
+    <!-- 智能穿戴 -->
+      <div class="capabackground">
+        <div class="capacity">
+            <div class="capa_box_top">
+                <div class="capa_box_top_al">智能穿戴</div>
+                <div class="capa_box_top_ar">
+                    <div class="capa_box_top_ar_min orangeGL"><a class="script_capa_box_top_ar" href="javascript:;">耳机</a></div>
+                    <div class="capa_box_top_ar_min orangeGL"><a class="script_capa_box_top_ar" href="javascript:;">穿戴</a></div>
+                </div>
+            </div>
+            <div class="capa_box scrip_capa_box scrip_capa_box_on">
+                <div class="capa_top">
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro2.webp"></a>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp">
+                            <div class="tran">
+                                <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                            </div>
+                        </a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">米家LED 智能台灯</li>
+                                <li style="color: #b0b0b0">无可视频闪,四种场景可变调光</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700" >169元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp"><div class="tran">
+                            <span>现在看起来挺不错的，性价比超高！持续关注呀</span>
+                        </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">九号平衡车 Plus</li>
+                                <li style="color: #b0b0b0">35km超长续航,一键自动跟随</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700" >3499元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp"><div class="tran">
+                            <span>米兔智能故事机.</span>
+                        </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">米兔智能故事机</li>
+                                <li style="color: #b0b0b0">微信远程互动,智能语音交互</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700">199元</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="capa capa_shadow capa_unright">
+                        <a href=""><img src="img_xiaomi/pro1.webp" alt="">
+                            <div class="tran">
+                                <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                            </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">米家恒温电水壶</li>
+                                <li style="color: #b0b0b0">水温智能控制,304不锈钢内胆</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700">199元</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <div class="capa_bottom">
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro2.webp"></a>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp">
+                            <div class="tran">
+                                <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                            </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">iHealth体温计</li>
+                                <li style="color: #b0b0b0">一秒速测,LED屏清晰读数</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700">129元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp">
+                            <div class="tran">
+                                <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                            </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">米家行车记录仪</li>
+                                <li style="color: #b0b0b0">晚上能拍清车牌的行车记录仪</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700">349元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capa capa_shadow">
+                        <a href=""><img src="img_xiaomi/pro1.webp">
+                            <div class="tran">
+                                <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                            </div></a>
+                        <div class="capa_a">
+                            <ul>
+                                <li style="color: #333333">米家iHealth血压计</li>
+                                <li style="color: #b0b0b0">爸妈上手就会用的智能血压计</li>
+                                <li style="font-size: 14px;margin-top: 10px; color: #ff6700">399元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capa capa_unright" >
+                        <div class="capa_min ">
+                            <img class="capa_shadow" src="img_xiaomi/pro3.png">
+                        </div>
+                        <div class="capa_min bottom capa_shadow">
+                            <div class="figure_a">
+                            <h3>浏览更多</h3>
+                            <li style="color:#757575; ">耳机</li></div>
+
+                            <div class="figure_b">
+                                <div class="figure_b_yuan">
+                                    <li >→</li>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+                
+                 <div class="capa_box scrip_capa_box">
+                  <div class="capa_top">
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch2.webp"></a>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp">
+                              <div class="tran">
+                                  <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                              </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">米家LED 智能台灯</li>
+                                  <li style="color: #b0b0b0">无可视频闪,四种场景可变调光</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700" >169元</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp"><div class="tran">
+                              <span>现在看起来挺不错的，性价比超高！持续关注呀</span>
+                          </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">九号平衡车 Plus</li>
+                                  <li style="color: #b0b0b0">35km超长续航,一键自动跟随</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700" >3499元</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp"><div class="tran">
+                              <span>米兔智能故事机.</span>
+                          </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">米兔智能故事机</li>
+                                  <li style="color: #b0b0b0">微信远程互动,智能语音交互</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700">199元</li>
+                              </ul>
+                          </div>
+  
+                      </div>
+                      <div class="capa capa_shadow capa_unright">
+                          <a href=""><img src="img_xiaomi/watch1.webp" alt="">
+                              <div class="tran">
+                                  <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                              </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">米家恒温电水壶</li>
+                                  <li style="color: #b0b0b0">水温智能控制,304不锈钢内胆</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700">199元</li>
+                              </ul>
+                          </div>
+  
+                      </div>
+                  </div>
+                  <div class="capa_bottom">
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch2.webp"></a>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp">
+                              <div class="tran">
+                                  <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                              </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">iHealth体温计</li>
+                                  <li style="color: #b0b0b0">一秒速测,LED屏清晰读数</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700">129元</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp">
+                              <div class="tran">
+                                  <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                              </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">米家行车记录仪</li>
+                                  <li style="color: #b0b0b0">晚上能拍清车牌的行车记录仪</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700">349元</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="capa capa_shadow">
+                          <a href=""><img src="img_xiaomi/watch1.webp">
+                              <div class="tran">
+                                  <span>小米一如既往的好前天下单今天就到了，送货到家很细心的...</span>
+                              </div></a>
+                          <div class="capa_a">
+                              <ul>
+                                  <li style="color: #333333">米家iHealth血压计</li>
+                                  <li style="color: #b0b0b0">爸妈上手就会用的智能血压计</li>
+                                  <li style="font-size: 14px;margin-top: 10px; color: #ff6700">399元</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="capa capa_unright" >
+                          <div class="capa_min ">
+                              <img class="capa_shadow" src="img_xiaomi/pro3.png">
+                          </div>
+                          <div class="capa_min bottom capa_shadow">
+                              <div class="figure_a">
+                                  <h3>浏览更多</h3>
+                                  <li style="color:#757575; ">穿戴</li>
+  
+                              </div>
+  
+                              <div class="figure_b">
+                                  <div class="figure_b_yuan">
+                                      <li >→</li>
+                                  </div>
+  
+                              </div>
+  
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+            </div>
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+    </div>
+  </div>
+  <!-- 轮播图js -->
+  <script>
+    var items = document.querySelectorAll(".item");//图片节点
+    var points = document.querySelectorAll(".point")//点
+    var left = document.getElementById("leftBtn");
+    var right = document.getElementById("rightBtn");
+    var all = document.querySelector(".wrap")
+    var index = 0;
+    var time = 0;//定时器跳转参数初始化
+    
+  
+    //封装一个清除active方法
+    var clearActive = function () {
+        for (i = 0; i < items.length; i++) {
+            items[i].className = 'item';
+        }
+        for (j = 0; j < points.length; j++) {
+            points[j].className = 'point';
+        }
+    }
+  
+    //改变active方法
+    var goIndex = function () {
+        clearActive();
+        items[index].className = 'item active';
+        points[index].className = 'point active'
+    }
+    //左按钮事件
+    var goLeft = function () {
+        if (index == 0) {
+            index = 4;
+        } else {
+            index--;
+        }
+        goIndex();
+    }
+  
+    //右按钮事件
+    var goRight = function () {
+        if (index < 4) {
+            index++;
+        } else {
+            index = 0;
+        }
+        goIndex();
+    }
+    
+  
+    //绑定点击事件监听
+    left.addEventListener('click', function () {
+        goLeft();
+        time = 0;//计时器跳转清零
+    })
+  
+    right.addEventListener('click', function () {
+        goRight();
+        time = 0;//计时器跳转清零
+    })
+  
+    for(i = 0;i < points.length;i++){
+        points[i].addEventListener('click',function(){
+            var pointIndex = this.getAttribute('data-index')
+            index = pointIndex;
+            goIndex();
+            time = 0;//计时器跳转清零
+        })
+    }
+    //计时器轮播效果
+    var timer;
+    function play(){
+     timer = setInterval(() => {
+        time ++;
+        if(time == 20 ){
+            goRight();
+            time = 0;
+        }    
+    },100)
+  }
+    play();
+    //移入清除计时器
+    all.onmousemove = function(){
+        clearInterval(timer)
+    }
+   //移出启动计时器
+    all.onmouseleave = function(){
+        play();
+    }
+  </script>
+  <!-- 切换内容js -->
+  <script>
+    var abc = document.getElementsByClassName("script_capa_box_top_ar");
+    console.log("abc:"+abc);
+    console.log("abc[0]"+abc[0]);
+    var box = document.getElementsByClassName("scrip_capa_box");
+    console.log("box:"+box);
+    console.log("box[0]:"+box[0]);
+    for(var i = 0; i<abc.length;i++){
+        abc[i].index=i;
+        abc[i].onmouseover=function(){
+            for(var j = 0 ;j<abc.length;j++){
+                box[j].className="capa_box scrip_capa_box";
+            }
+            box[this.index].className="capa_box scrip_capa_box scrip_capa_box_on"
+            console.log("this.index:"+this.index);
+        }
+    }
+</script>
+
+</body>
+</html>
